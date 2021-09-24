@@ -6,6 +6,7 @@ const refEng = document.getElementById('ref-en')
 const refHeb = document.getElementById('ref-he')
 const descEng = document.getElementById('desc-en')
 const descHeb = document.getElementById('desc-he')
+const refreshParshah = document.getElementById('refresh-parshah')
 
 // import fetch from 'node-fetch'
 
@@ -46,5 +47,7 @@ async function getParshah(){
         console.log('omg an error', error)
     }
 }
+
+refreshParshah.addEventListener('click', getParshah);
 
     getParshah();
