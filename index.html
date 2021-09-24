@@ -14,12 +14,15 @@
 
         <div class="container">
 
+
         <div class="weekly-parshah">
-            <span class="parshah-data"><p>Parshah data</p>
-            <div class="name-en" id="name-en"></div>
-            <div class="name-he"></div>
-            <div class="holiday-parshah"></div>
-            </span>
+            <button class="refresh-parshah">Refresh readings</button>
+            <span class="parshah-data"><p>Parshah data</p></span>
+            <p><b>Parshah title:</b> <span class="name-en" id="name-en"></span> | <span class="name-he" id="name-he"></span></p>
+            <p><b>Holiday reading:</b> <span class="holiday-title-en" id="holiday-title-en"></span> | <span class="holiday-title-he" id="holiday-title-he"></span></p>
+            <p><b>Reference:</b> <span class="ref-en" id="ref-en"></span> | <span class="ref-he" id="ref-he"></span></p>
+            <p><b>English description:</b> <span class="desc-en" id="desc-en"></span></p>
+            <p><b>Hebrew description:</b> <span class="desc-he" id="desc-he"></span></p>
 
             <button class="sefaria=link">Read this week's parshah on Sefaria</button>
         </div>
@@ -27,7 +30,6 @@
 </div>
 
         <script src="script.js"></script>
-        <!-- <script src="https://www.sefaria.org/sefaria.js"></script> -->
-        <!-- <script src="bundle.js"></script> -->
+       
     </body>
 </html>
