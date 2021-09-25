@@ -1,3 +1,5 @@
+const refreshParshah = document.getElementById('refresh-parshah')
+
 const titleEng = document.getElementById('name-en')
 const titleHeb = document.getElementById('name-he')
 const holidayTitleEng = document.getElementById('holiday-title-en')
@@ -6,7 +8,13 @@ const refEng = document.getElementById('ref-en')
 const refHeb = document.getElementById('ref-he')
 const descEng = document.getElementById('desc-en')
 const descHeb = document.getElementById('desc-he')
-const refreshParshah = document.getElementById('refresh-parshah')
+
+const hafEng = document.getElementById('haf-en')
+const hafHeb = document.getElementById('haf-he')
+
+const dafEng = document.getElementById('daf-en')
+const dafHeb = document.getElementById('daf-he')
+
 
 // import fetch from 'node-fetch'
 
@@ -26,6 +34,9 @@ async function getParshah(){
     console.log(data['calendar_items']['0']['heRef'])
     console.log(data['calendar_items']['0']['description']['en'])
     console.log(data['calendar_items']['0']['description']['he'])
+
+    console.log(data['calendar_items']['1']['displayValue']['en'])
+    console.log(data['calendar_items']['1']['displayValue']['he'])
         
     titleEng.innerText = data['calendar_items']['0']['title']['en'];
     titleHeb.innerText = data['calendar_items']['0']['title']['he']
@@ -35,6 +46,12 @@ async function getParshah(){
     refHeb.innerText = data['calendar_items']['0']['heRef']
     descEng.innerText = data['calendar_items']['0']['description']['en']
     descHeb.innerText = data['calendar_items']['0']['description']['he']
+
+    hafEng.innerText = data['calendar_items']['1']['displayValue']['en']
+    hafHeb.innerText = data['calendar_items']['1']['displayValue']['he']
+
+    dafEng.innerText = data['calendar_items']['2']['displayValue']['en']
+    dafHeb.innerText = data['calendar_items']['2']['displayValue']['he']
     
         if(!data) {
         return;
