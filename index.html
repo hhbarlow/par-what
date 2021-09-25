@@ -15,11 +15,28 @@
         <div class="container">
 
         <div class="weekly-parshah">
-            <button class="refresh-parshah" id="refresh-parshah">Refresh readings</button>
+
+            <!-- <p id="radio">
+            <input type="radio" class="schedule" id="torah" name="select_reading" value="torah">
+            <label for="torah">Torah</label>
+            <input type="radio" class="schedule" id="haftarah" name="select_reading" value="haftarah">
+            <label for="haftarah">Haftarah</label>
+            <input type="radio" class="schedule" id="daf" name="select_reading" value="daf"></lable>
+            <label for="daf">Daf Yomi</label>
+            </p> -->
+
+            <p><button class="refresh-parshah" id="refresh-parshah">Refresh readings</button></p>
+
+            <p id="schedule">
+                <button id="torahB">Torah</button>
+                <button id="haftarahB">Haftarah</button>
+                <button id="dafB">Daf Yomi</button>
+            </p>
+
             
-            <p><b>Weekly Torah Portion</b></p>
-            
-            <span class="parshah-data">
+            <span class="parshah-data" id="parshah-data">
+
+            <p><b><center>Weekly Torah Portion</center></b></p>
 
             <p><b>Parshah title:</b> <span class="name-en" id="name-en"></span> | <span class="name-he" id="name-he"></span></p>
             <p><b>Holiday reading:</b> <span class="holiday-title-en" id="holiday-title-en"></span> | <span class="holiday-title-he" id="holiday-title-he"></span></p>
@@ -32,7 +49,7 @@
             <p>All data from <a href="https://www.sefaria.org/">Sefaria</a>. See the readings in full <a href="https://www.sefaria.org/calendars">here</a> and be sure to <a href="https://sefaria.nationbuilder.com/supportsefaria_w">support Sefaria</a>.</p>
         </div>
 
-        <div class="weekly-haftarah">
+        <div class="haftarah" id="haftarah">
 
             <p><b>Weekly Haftarah</b></p>
 
@@ -41,7 +58,7 @@
 
         </div>
 
-        <div class="daf-yomi">
+        <div class="daf-yomi" id="daf-yomi">
             <p><b>Daf Yomi</b></p>
 
             <p><span class="daf-en" id="daf-en"></span>  |  <span class="daf-he" id="daf-he"></span></p>

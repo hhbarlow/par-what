@@ -1,5 +1,38 @@
 const refreshParshah = document.getElementById('refresh-parshah')
 
+const torahButton = document.getElementById("torahB")
+const hafButton = document.getElementById("haftarahB")
+const dafButton = document.getElementById("dafB")
+
+const torahData = document.getElementById("parshah-data")
+const hafData = document.getElementById("haftarah")
+const dafData = document.getElementById("daf-yomi")
+
+hafData.classList.add("hidden")
+dafData.classList.add("hidden")
+
+function showTorah(){
+    torahData.classList.remove("hidden");
+    hafData.classList.add("hidden");
+    dafData.classList.add("hidden")
+}
+
+function showHaftarah(){
+    torahData.classList.add("hidden");
+    hafData.classList.remove("hidden");
+    dafData.classList.add("hidden")
+}
+
+function showDaf(){
+    torahData.classList.add("hidden");
+    hafData.classList.add("hidden");
+    dafData.classList.remove("hidden")
+}
+
+torahButton.addEventListener('click', showTorah)
+hafButton.addEventListener('click', showHaftarah)
+dafButton.addEventListener('click', showDaf)
+
 const titleEng = document.getElementById('name-en')
 const titleHeb = document.getElementById('name-he')
 const holidayTitleEng = document.getElementById('holiday-title-en')
