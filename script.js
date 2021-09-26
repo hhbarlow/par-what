@@ -82,15 +82,12 @@ async function getParashah(){
     dafEng.innerText = data['calendar_items']['2']['displayValue']['en']
     dafHeb.innerText = data['calendar_items']['2']['displayValue']['he']
     
-        if(!data) {
-        return;
-    }
     }
     
 
     catch (error) {
         // getParashah()
-        console.log('omg an error', error)
+        console.log('The following error has occurred:', error)
     }
 }
 
