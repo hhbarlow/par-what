@@ -1,10 +1,10 @@
-const refreshParshah = document.getElementById('refresh-parshah')
+const refreshParashah = document.getElementById('refresh-parashah')
 
 const torahButton = document.getElementById("torahB")
 const hafButton = document.getElementById("haftarahB")
 const dafButton = document.getElementById("dafB")
 
-const torahData = document.getElementById("parshah-data")
+const torahData = document.getElementById("parashah-data")
 const hafData = document.getElementById("haftarah")
 const dafData = document.getElementById("daf-yomi")
 
@@ -35,8 +35,6 @@ dafButton.addEventListener('click', showDaf)
 
 const titleEng = document.getElementById('name-en')
 const titleHeb = document.getElementById('name-he')
-const holidayTitleEng = document.getElementById('holiday-title-en')
-const holidayTitleHeb = document.getElementById('holiday-title-he')
 const refEng = document.getElementById('ref-en')
 const refHeb = document.getElementById('ref-he')
 const descEng = document.getElementById('desc-en')
@@ -51,7 +49,7 @@ const dafHeb = document.getElementById('daf-he')
 
 // import fetch from 'node-fetch'
 
-async function getParshah(){
+async function getParashah(){
     const calendarUrl = 'https://www.sefaria.org/api/calendars/'
     
     try {
@@ -71,10 +69,8 @@ async function getParshah(){
     console.log(data['calendar_items']['1']['displayValue']['en'])
     console.log(data['calendar_items']['1']['displayValue']['he'])
         
-    titleEng.innerText = data['calendar_items']['0']['title']['en'];
-    titleHeb.innerText = data['calendar_items']['0']['title']['he']
-    holidayTitleEng.innerText = data['calendar_items']['0']['displayValue']['en']
-    holidayTitleHeb.innerText = data['calendar_items']['0']['displayValue']['he']
+    titleEng.innerText = data['calendar_items']['0']['displayValue']['en']
+    titleHeb.innerText = data['calendar_items']['0']['displayValue']['he']
     refEng.innerText = data['calendar_items']['0']['ref']
     refHeb.innerText = data['calendar_items']['0']['heRef']
     descEng.innerText = data['calendar_items']['0']['description']['en']
@@ -93,11 +89,11 @@ async function getParshah(){
     
 
     catch (error) {
-        // getParshah()
+        // getParashah()
         console.log('omg an error', error)
     }
 }
 
-refreshParshah.addEventListener('click', getParshah);
+refreshParashah.addEventListener('click', getParashah);
 
-    getParshah();
+    getParashah();
