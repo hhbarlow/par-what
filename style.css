@@ -6,11 +6,18 @@ h1 {
 
 body {
     text-align: center;
-    background-color: #191970;
+    background-color: #00458B;
     display: flex;
     align-items: center;
     flex-direction: column;
     /* background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%239C92AC' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+}
+
+button {
+    background-color: #191970;
+    color: #F0F8FF;
+    border-color: #191970;
+    border-radius: 5px;
 }
 
 .container {
@@ -18,11 +25,10 @@ body {
     /* align-items: center; */
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(32, 178, 170, 0.3);
-    border-radius: 20px;
-    width: 65%;
+    /* border-radius: 20px; */
+    width: 100%;
     padding: 10px;
-    color: #9ACD32;
+    color: #191970;
 }
 
 #schedule {
@@ -32,38 +38,34 @@ body {
     justify-content: space-evenly;
 }
 
-.weekly-parashah {
-    /* background-color: rgba(32, 178, 170, 0.3);
-    border-radius: 20px;
-    width: 65%;
-    padding: 10px;
-    color: #9ACD32; */
-}
-
 .parashah-data {
+    background-color: #FFF8DC;
+    width: 100%;
     text-align: left;
+    padding: 20px;
+    margin: 0;
 }
 
-.haftarah {
-    /* background-color: rgba(32, 178, 170, 0.3);
-    border-radius: 20px;
-    width: 65%;
-    padding: 10px;
-    color: #9ACD32; */
-}
-
-.daf-yomi {
-    /* background-color: rgba(32, 178, 170, 0.3);
-    border-radius: 20px;
-    width: 65%;
-    padding: 10px;
-    color: #9ACD32; */
+.haftarah, .daf-yomi {
+    background-color: #F0F8FF;
+    width: 100%;
 }
 
 .sefaria {
     text-align: center;
     font-size: 0.8em;
     font-style: italic;
+    color: #87CEFA;
+}
+
+.sefaria a {
+    color: #F0F8FF;
+}
+
+.refresh-parashah {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hidden {
