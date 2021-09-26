@@ -46,9 +46,6 @@ const hafHeb = document.getElementById('haf-he')
 const dafEng = document.getElementById('daf-en')
 const dafHeb = document.getElementById('daf-he')
 
-
-// import fetch from 'node-fetch'
-
 async function getParashah(){
     const calendarUrl = 'https://www.sefaria.org/api/calendars/'
     
