@@ -65,6 +65,9 @@ async function getParashah(){
 
     console.log(data['calendar_items']['1']['displayValue']['en'])
     console.log(data['calendar_items']['1']['displayValue']['he'])
+
+    console.log(data['calendar_items']['2']['displayValue']['en'])
+    console.log(data['calendar_items']['2']['displayValue']['he'])
         
     titleEng.innerText = data['calendar_items']['0']['displayValue']['en']
     titleHeb.innerText = data['calendar_items']['0']['displayValue']['he']
